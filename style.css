@@ -1,0 +1,88 @@
+/*menentukan font*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@300&family=Young+Serif&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
+    background-color: burlywood;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: burlywood;
+
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* set the image profile */
+.img-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    color: black;
+}
+
+.link-item {
+    /* menentukan bentuk link item */
+    width: 100%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    /* text color and background color */
+    background-color: bisque;
+    color: black;
+
+    /* tata letak */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon {
+    margin: 3px 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.link-item p {
+    margin-right: 60px;
+
+}
+
+.link-item:hover {
+    /* mengubah ukuran element */
+    transform: scale(1.02);
+
+    /* kecepatan transisi*/
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+
+    background-color: gold;
+}
